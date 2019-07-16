@@ -13,10 +13,10 @@ import {
 function App() {
     return (
         <div className="App">
-            <Card>
-                <Card.Header as="h3">Zoe Scot</Card.Header>
-                <Card.Body>
-                    <Container>
+            <Container>
+                <Card>
+                    <Card.Header as="h3">Zoe Scot</Card.Header>
+                    <Card.Body>
                         <Row className="mt-2">
                             <Col sm={8}>
                                 <Card.Title>Influencer fee</Card.Title>
@@ -159,6 +159,16 @@ function App() {
                                 />
                             </Col>
                         </Row>
+                        <Row>
+                            <Col>
+                                <Button
+                                    variant="light"
+                                    className="text-danger font-weight-bold mt-2"
+                                >
+                                    + Add post
+                                </Button>
+                            </Col>
+                        </Row>
                         <Card.Title className="mt-5">Facebook</Card.Title>
                         <Row className="mt-3">
                             <Col>
@@ -170,12 +180,12 @@ function App() {
                                 </select>
                             </Col>
                             <Col>
-                                <select className="custom-select">
-                                    <option defaultValue>Post</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
+                                <FormControl
+                                    type="date"
+                                    min="1000-01-01"
+                                    max="3000-12-31"
+                                    className="form-control"
+                                />
                             </Col>
                         </Row>
                         <Row>
@@ -299,9 +309,9 @@ function App() {
                                 </Button>
                             </Col>
                         </Row>
-                    </Container>
-                </Card.Body>
-            </Card>
+                    </Card.Body>
+                </Card>
+            </Container>
         </div>
     );
 }
