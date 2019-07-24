@@ -1,3 +1,3 @@
 ## Live Demo 
 
-[Demo(]http://bootstrap.andreinedelus.ro/)
+[Demo](http://bootstrap.andreinedelus.ro/)
